@@ -11,6 +11,8 @@
         android:text="Todo"
         android:layout_margin="4dp"
         android:id="@+id/todo"
+        android:maxLines="4"
+        android:layout_marginEnd="8dp"
         android:padding="8dp"
         android:textColor="#fff"
         android:textSize="20sp"

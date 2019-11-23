@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Point;
 import android.os.Bundle;
@@ -48,6 +49,7 @@ public class ListviewActivity extends AppCompatActivity {
         addbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 showDialoguebox();
             }
         });
@@ -95,11 +97,16 @@ public class ListviewActivity extends AppCompatActivity {
                 }else {
                     focusview.requestFocus();
                     isok=true;
-
                 }
             }
         });
-        alertDialog.show();
+
+        if(!((Activity) ListviewActivity.this).isFinishing())
+        {
+            //show dialog
+            alertDialog.show();
+        }
+
     }
     class itemClass{
         String work;
@@ -127,8 +134,6 @@ public class ListviewActivity extends AppCompatActivity {
                 todotext.setText(itemClass.work);
                 timetext.setText(itemClass.time);
             }
-
-
             return convertView;
         }
     }

@@ -23,6 +23,7 @@
             >
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:maxLines="4"
                 android:id="@+id/todo"
                 android:hint="ToDo"
                 android:layout_height="wrap_content"/>
@@ -39,6 +40,7 @@
                 android:layout_width="match_parent"
                 android:id="@+id/time"
                 android:hint="Time"
+                android:inputType="time"
                 android:layout_height="wrap_content"/>
 
         </com.google.android.material.textfield.TextInputLayout>
