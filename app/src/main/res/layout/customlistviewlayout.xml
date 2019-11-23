@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/listviewitembackground"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Todo"
+        android:layout_margin="4dp"
+        android:id="@+id/todo"
+        android:padding="8dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Time"
+        android:textColor="#fff"
+        android:layout_margin="4dp"
+        android:id="@+id/time"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
